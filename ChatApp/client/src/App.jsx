@@ -5,6 +5,7 @@ import Cookies from 'universal-cookie' // To be able to Save User Information in
 
 // Everything is already Exported so there is no need to type other things
 import { ChannelListContainer, ChannelContainer } from './Components' // Everything is already Exported so there is no need to type other things
+import './App.css'
 
 const apiKey = '5mengkanhpdy' // Setup the Chat || the Key is from my Stream Profile (https://gstrm.io/js-mastery)
 
