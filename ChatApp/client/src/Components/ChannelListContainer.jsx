@@ -9,12 +9,9 @@ const Sidebar = () => {
   <div className="channel-list__sidebar">
     <div className="channel-list__sidebar__icon1">
       <div className="icon1__inner">
-        <img src={ChatApp} alt="ChatApp" width="30" />
+        <img src={ChatApp} alt="ChatApp" width="30" />        
       </div>
     </div>
-
-
-
   </div>
 }
 
