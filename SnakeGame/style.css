@@ -10,11 +10,17 @@ body {
 
 #gameBoard {
     background-color: #ccc;
+    border-left: 6px solid #fff;
+    border-right: 6px solid #fff;
+    background-image: url(Assets/Grid.png);
     width: 100vmin;
     height: 100vmin;
     display:grid;
+    align-items: center;
     grid-template-rows: repeat(21,1fr);
+    row-gap: 3px;
     grid-template-columns: repeat(21,1fr);
+    column-gap: 3px;
 }
 
 .snake {
