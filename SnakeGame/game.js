@@ -1,5 +1,7 @@
+import {f_Update as f_snakeUpdate , f_Draw as f_snakeDraw , SNAKE_SPEED } from './snake.js'
+
+//const SNAKE_SPEED = 1 // Snake moves 1 times per second
 let lastRenderTime = 0
-const SNAKE_SPEED = 2 // Snake moves 2 times per second
 
 // Loop Function
 function f_mainLoop(currentTime){
@@ -10,7 +12,7 @@ function f_mainLoop(currentTime){
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000 // Divide to 1000 to convert the milliseconds to seconds
 
     // Check if seconds since last render are less than the time between the two renders
-    if(secondsSinceLastRender < 1 / SNAKE_SPEED) return // 0.5 seconds is the time between the two moves/renders (delay)
+    if(secondsSinceLastRender < 1 / SNAKE_SPEED) return // 1 seconds is the time between the two moves/renders (delay)
 
     lastRenderTime = currentTime // Update the last render time
     console.log(currentTime)
@@ -21,11 +23,10 @@ function f_mainLoop(currentTime){
 
 window.requestAnimationFrame(f_mainLoop) // Call Loop Function
 
-
-function f_Update() {
-
+function f_Update(){
+    f_snakeUpdate()
 }
 
 function f_Draw() {
-
+    f_snakeDraw()
 }
