@@ -48,10 +48,36 @@
 	min-width: 300px;
 	min-height: 400px;
 	background: #a1caf1;
-	padding: 40px 30px 30px;
 	border-radius: 10px;
 	box-shadow: 25px 25px 75px #73c2fb,
 	10px 10px 70px #5b92e5,
 	inset -5px -5px 15px #93ccea,
 	inset 5px 5px 15px #93ccea;
 }
+
+/* Login-Register Container */
+.LogReg_Buttons_Container
+{
+	position: relative;
+	display: inline-flex;
+	place-items: center;
+	width: 300px;
+	height: 50px;
+	
+}
+
+/* Login-Register Container Buttons */
+.LogReg_Buttons_Container span {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 150px;
+  height: 50px;
+  align-items: center;
+  place-items:  center;
+  background: #5b92e5;
+	color: #fff;
+	user-select: none;
+	cursor: pointer;
+	font-weight: 400;
+}
+
