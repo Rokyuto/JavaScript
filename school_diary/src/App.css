@@ -75,7 +75,7 @@
   text-align: center;
   align-items: center;
   place-items:  center;
-  background: #5b92e5;
+  background: rgb(92, 147, 230);
 	color: #fff;
 	user-select: none;
 	cursor: pointer;
@@ -112,11 +112,11 @@
   	text-decoration: none;
   	position: relative;
   	background: transparent;
-  	color: hsl(250 100% 54%);
-  	border: hsl(250 100% 54%) 0.125em solid;
+  	color: hsl(216 100% 54%);
+  	border: hsl(216 100% 54%) 0.125em solid;
   	padding: 0.25em 1em;
   	border-radius: 0.25em;
 
-  	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em hsl(250 100% 54%);
-  	box-shadow: inset 0 0 0.5em 0 hsl(250 100% 54%), 0 0 0.5em 0 hsl(250 100% 54%);
+  	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em hsl(216 100% 54%);
+  	box-shadow: inset 0 0 0.5em 0 hsl(216 100% 54%), 0 0 0.5em 0 hsl(216 100% 54%);
 }
