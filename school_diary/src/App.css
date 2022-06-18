@@ -13,12 +13,13 @@
   color: white;
 }
 
-/* UKTC Logo Size */
+/* UKTC Logo */
 .School-logo {
-  height: 25vmin;
+  height: 20vmin; /* Logo Size */
   pointer-events: none;
+  /* Alignments */
   align-items: top;
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 /* UKTC Logo Spin Animation */
@@ -36,4 +37,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Login-Register Container Setup */
+.LogReg_Container
+{
+	position: relative;
+  justify-content: center;
+  margin: 2.5em;
+	min-width: 300px;
+	min-height: 400px;
+	background: #a1caf1;
+	padding: 40px 30px 30px;
+	border-radius: 10px;
+	box-shadow: 25px 25px 75px #73c2fb,
+	10px 10px 70px #5b92e5,
+	inset -5px -5px 15px #93ccea,
+	inset 5px 5px 15px #93ccea;
 }
