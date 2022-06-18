@@ -1,9 +1,9 @@
 import logo from './uktc.svg';
 import './App.css';
+import React, {Component} from 'react'
 
-// Wesite Functionality
-
-function App() {
+class App extends Component{
+  render(){
   return (
     <div className="App">
       <header className="App-header">
@@ -14,10 +14,17 @@ function App() {
             <span className="login_button">Login</span>
             <span className="register_button">Register</span>
           </div>
+          <div className="LoginContainer" >
+            <input type="text" id="studentName" className="studentInput" placeholder="Email or username" minLength="17"></input> {/* Student School Number Input Field */}
+            <input type="password" id="studentPassword" className="studentInput" placeholder="Password" ></input> {/* Student Pasword Input Field */}
+            <input type="submit" value="Login" id="studentSubmit" className="studentSubmit"></input>  {/* Login Button */}
+          </div>
+          <div className="RegisterContainer"></div>
         </div>
       </header>
     </div>
   );
+  }
 }
 
 export default App;
