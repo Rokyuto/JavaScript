@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App-header {
+  background-color: #87cefa; /* Default Color: #282c34 */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* UKTC Logo */
+.School-logo {
+  height: 20vmin; /* Logo Size */
+  pointer-events: none;
+  /* Alignments */
+  align-items: top;
+  margin-top: 2em;
+}
+
+/* UKTC Logo Spin Animation */
+@media (prefers-reduced-motion: no-preference) {
+  .School-logo {
+    animation: School-logo-spin infinite 20s linear;
+  }
+}
+
+/* UKTC Logo Spin Rotation */
+@keyframes School-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Login-Register Container Setup */
+.LogReg_Container
+{
+	position: relative;
+  justify-content: center;
+  margin: 2.5em;
+	min-width: 300px;
+	min-height: 400px;
+	background: #a1caf1;
+	border-radius: 10px;
+	box-shadow: 25px 25px 75px #73c2fb,
+	10px 10px 70px #5b92e5,
+	inset -5px -5px 15px #93ccea,
+	inset 5px 5px 15px #93ccea;
+}
+
+/* Login-Register Container */
+.LogReg_Buttons_Container
+{
+	position: relative;
+	display: inline-flex;
+	place-items: center;
+	width: 300px;
+	height: 50px;
+}
+
+/* Login-Register Container Buttons */
+.LogReg_Buttons_Container span {
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 150px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  place-items:  center;
+  background: rgb(92, 147, 230);
+	color: #fff;
+	user-select: none;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+/* Login Container */
+.LoginContainer {
+  position: relative;
+  /* Container Size */
+  min-width: 300px;
+	min-height: 350px;
+  /* Container Orientation and Items Alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.studentInput {
+  width: 70%;
+  height: 1.75em;
+  font-size: calc(5px + 1.5vmin);
+  margin: 2em;
+  align-items: center;
+  border: 2px solid #000;
+}
+
+.studentSubmit{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font-size: 2rem;
+	display: inline-block;
+  	cursor: pointer;
+  	text-decoration: none;
+  	position: relative;
+  	background: transparent;
+  	color: hsl(216 100% 54%);
+  	border: hsl(216 100% 54%) 0.125em solid;
+  	padding: 0.25em 1em;
+  	border-radius: 0.25em;
+
+  	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em hsl(216 100% 54%);
+  	box-shadow: inset 0 0 0.5em 0 hsl(216 100% 54%), 0 0 0.5em 0 hsl(216 100% 54%);
 }
