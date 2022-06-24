@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.nav{
+    background-color: rgb(55, 55, 158);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    font-size:3vh;
+ 
+}
+.nav a{
+    color: inherit;
+    text-decoration: none;
+    
+}
+.nav ul {
+   padding: 0;
+   margin:0;
+   list-style: none;
+   display: flex;
+   gap: 1rem;
+}
+.nav ul li{
+    padding: 30px 30px;
+}
+.nav a #servise{
+    visibility:hidden;
+    position: absolute;
+    width:auto;
+    border: 3px solid white;
+    height: 20px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    padding:0 5px 8px 5px;
+}
+.nav .navtext:hover #servise{
+    visibility:visible;
+}
+.homeShortcuts{
+    display: grid;
+    gap: 1.5rem;
+}
+

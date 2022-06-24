@@ -1,14 +1,15 @@
 import Home from "./Home";
+import ErrorPage from "./mechanics/Pages/ErrorPage";
 import Dashboard from "./mechanics/Pages/Dashboard";
-import{BrowserRouter as Router,Route,Switch} from "react-router-dom"
+import{Route,Routes} from "react-router-dom"
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/Dashboard" component={Dashboard}/>
-      </Switch>
-    </Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Dashboard" element={<Dashboard/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
+        </Routes>
+    
   );
 }
 

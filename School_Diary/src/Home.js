@@ -1,10 +1,10 @@
 import logo from './uktc.svg';
 import React, { useState } from 'react'
-import {useHistory} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
   //const var name|, mechanic name | state - true/false
   const [showLogin , setShowLogin] = useState(true); // Show/Hide Mechanic
-  let history=useHistory();
+  let navigate=useNavigate();
   
   return (
     <div className="Home">
@@ -22,8 +22,8 @@ const Home = () => {
           { showLogin && <div className="LoginContainer" > {/* By Default Show Login Container ; showLogin = true */}
             <input type="text" id="studentName" className="studentInput" placeholder="Email or username" minLength="17"></input> {/* Student School Number Input Field */}
             <input type="password" id="studentPassword" className="studentInput" placeholder="Password" ></input> {/* Student Pasword Input Field */}
-            {/* <input type="submit" value="Login" id="studentSubmit" className="studentSubmit" ></input> Login Button */}
-            <button  onClick={()=>{history.push("/Dashboard")}}>Login</button>
+            {/* <input type="submit" value="Login" id="studentSubmit" className="studentSubmit" onClick={"/Dashboard"} ></input> Login Button */}
+            <button id="studentSubmit" className="studentSubmit" onClick={()=>{navigate('/Dashboard')}}>Login</button>
           </div> }
 
           {/* Register Container */}
