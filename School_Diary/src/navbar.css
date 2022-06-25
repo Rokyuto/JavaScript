@@ -13,12 +13,10 @@ body{
     gap: 2rem;
     padding: 0 1rem;
     font-size:3vh;
- 
 }
 .nav a{
     color: inherit;
     text-decoration: none;
-    
 }
 .nav ul {
    padding: 0;
@@ -38,7 +36,7 @@ body{
     height: 20px;
     font-size: 18px;
     background-color: white;
-    color: black;
+    color: rgb(0, 0, 0);
     padding:0 5px 8px 5px;
 }
 .nav .navtext:hover #servise{
@@ -46,6 +44,39 @@ body{
 }
 .homeShortcuts{
     display: grid;
-    gap: 1.5rem;
+    height: auto;
+    width: 200px;
 }
-
+.homeShortcuts #Home{
+    background-color: red;
+    font-size:1.2rem;
+    cursor: pointer;
+    height: 45px;
+}
+.homeShortcuts a .Start{
+    color: white;
+    font-size: 17px;
+    padding-left: 5px;
+}
+.homeShortcuts a{
+    list-style: none;
+    text-decoration: none;
+}
+.homeShortcuts .dash-home-shortcuts{
+    border-bottom:1px solid white;
+    height:40px;
+    cursor: pointer;
+}
+.mobil-apps{
+    background-color:#497FAE;
+    height:355px; /*Resoluion for big display*/
+    /* height: 148px;  Resolutin of the laptop*/
+}
+.mobil-apps .mobile-apps-text{
+    color: white;
+    padding-left: 5px;
+}
+/* .mobil-apps #info-icons{
+    padding-left: 5px;
+    size: 50px;
+} */
