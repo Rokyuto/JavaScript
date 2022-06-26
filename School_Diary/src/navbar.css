@@ -69,7 +69,7 @@ body{
 }
 .mobil-apps{
     background-color:#497FAE;
-    height:355px; /*Resoluion for big display*/
+    height:40px; /*Resoluion for big display*/
     /* height: 148px;  Resolutin of the laptop*/
 }
 .mobil-apps .mobile-apps-text{
